@@ -27,8 +27,8 @@ body {
     --footer-height: 25px;
     
     font-family: 'Besley', serif;
-
-    
+    width: 99%;
+    height: 100%;
 }
 
 main {
@@ -37,7 +37,6 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
     background-color: var(--color2);
     height: 100%;
     padding: 5px;
@@ -82,3 +81,34 @@ footer {
     height: var(--footer-height);
 }
 
+p {
+    font-size: 14px;
+    margin: 5px;
+    /* border: 1px solid black;
+    padding: ; */
+}
+
+.flex {
+    padding: 5px;
+    margin: 10px;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.seed {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px black;
+    border-radius: 25px;
+    list-style: none;
+    padding: 15px;
+    background-color: var(--color5);
+    color: var(--color6);
+}
+.seed, h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+}
+.seed, img {
+    width: 120px;
+}
