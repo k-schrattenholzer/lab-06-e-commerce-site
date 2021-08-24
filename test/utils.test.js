@@ -7,45 +7,25 @@ const test = QUnit.test;
 const products = [
     {
         id: 1,
-        name:`Granny's Bonnet`,
-        image:'../assets/Aquilegia.jpeg',
-        type:'Flower',
-        height:'15-20 in',
-        light:'partial shade',
-        price: 6.99,
+        name:`Granny's Bonnet`
     },
     {
         id: 2,
-        name:'Carnations',
-        image:'../assets/carnations.jpeg',
-        type:'Flower',
-        height:'25-30 in',
-        light:'full sun',
-        price: 4.49,
+        name:'Carnations'
     },
     {
         id: 3,
-        name:'Misc Large Dahlias',
-        image:'../assets/large dahlias.jpeg',
-        type:'Mix',
-        height:'3-4 ft',
-        light:'full sun',
-        price: 7,
+        name:'Misc Large Dahlias'
     }];
 
 test(`findById should take in an ID and return the object matching the input ID`, (expect) => {
 
     const expected = `{
-        "height":'25-30 in',
-        "id": 2,
-        "image":'../assets/carnations.jpeg',
-        "light":'full sun',
-        "name":'Carnations',
-        "price": 4.49,
-        "type":'Flower'
+        id: 2,
+        name: "Carnations"
     }`;
     
     const actual = findById(products, 2);
 
-    expect.deepEqual(actual, expected);
+    expect.equal(actual, expected);
 });
