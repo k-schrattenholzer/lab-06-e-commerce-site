@@ -5,7 +5,7 @@ import { renderProduct } from '../products/utils.js';
 const test = QUnit.test;
 
 test('renderProduct should take in a seed and return the correct HTML elements', (expect) => {
-    const expected = `<li class="seed"><h3 class="seed-name">Pansy</h3><img class="seed-img" src="../assets/pansy.jpeg" alt="seed pack"><div class="flex"><p class="seed-type">Flower</p><p class="plant-height">6-12 in.</p><p class="seed-light">partial sun</p><p class="seed-price"></p>4.99</div></li>`;
+    const expected = `<li class="seed"><h3 class="seed-name">Pansy</h3><img class="seed-img" src="../assets/pansy.jpeg"><div class="flex"><p class="seed-type">Seed type: Flower</p><p class="plant-height">Grows to: 6-12 in.</p><p class="seed-light">Needs: partial sun</p><p class="seed-price">$4.99</p></div><button class=\"cart-button\">Add to Cart</button></li>`;
     
     const actual = renderProduct(
         {
@@ -18,6 +18,6 @@ test('renderProduct should take in a seed and return the correct HTML elements',
             price: 4.99,
         });
 
-    expect.deepEqual(actual, expected);
+    expect.equal(actual.outerHTML, expected);
 });
 

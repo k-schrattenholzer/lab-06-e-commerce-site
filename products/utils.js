@@ -40,9 +40,11 @@ export function renderProduct(seed) {
         flexDiv,
         cartButton
     );
+    
     cartButton.addEventListener('click', () => {
         alert(`Added ${seed.name} to the cart`);
     });
+
     return li;
 
 }

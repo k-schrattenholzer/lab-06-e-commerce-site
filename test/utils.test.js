@@ -4,7 +4,7 @@ const test = QUnit.test;
 
 //Find by ID Test
 
-const products = [
+const testArray = [
     {
         id: 1,
         name:`Granny's Bonnet`
@@ -20,12 +20,12 @@ const products = [
 
 test(`findById should take in an ID and return the object matching the input ID`, (expect) => {
 
-    const expected = `{
+    const expected = {
         id: 2,
         name: "Carnations"
-    }`;
+    };
     
-    const actual = findById(products, 2);
+    const actual = findById(testArray, 2);
 
-    expect.equal(actual, expected);
+    expect.deepEqual(actual, expected);
 });

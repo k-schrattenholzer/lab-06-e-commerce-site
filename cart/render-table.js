@@ -27,3 +27,7 @@ function getItemTotal(itemPrice, itemQuantity) {
     const total = itemPrice * itemQuantity;
     return total;
 }
+
+export function subTotalTable(allProducts, wholeCart) {
+
+}
