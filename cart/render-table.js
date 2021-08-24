@@ -15,6 +15,8 @@ export function renderTableRow(cartItem) {
     priceTd.textContent = product.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
     quantityTd.textContent = cartItem.quantity;
 
+    console.log(product.price);
+
     const total = getItemTotal(product.price, cartItem.quantity);
     subTotalTd.textContent = total.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 
@@ -28,6 +30,12 @@ function getItemTotal(itemPrice, itemQuantity) {
     return total;
 }
 
-export function subTotalTable(allProducts, wholeCart) {
-
+export function getOrderTotal(allProducts, totalCart) {
+    let accumulator = 0;
+    for (let item of totalCart) {
+        const product = findById(allProducts, item.id);
+        const total = product.price * item.quantity;
+        accumulator = accumulator + total;
+    }
+    return accumulator.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 }
