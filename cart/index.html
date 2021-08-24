@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cartstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h2>Your cart</h2>
+        </div>
+        <div>
+            <a href="../index.html">Home</a>
+            <a href="../products/index.html">Products</a>
+        </div>
+    </header>
+    <main>
+        <table class="customTable">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="total"></td>
+            </tfoot>
+          </table>
+          <div>
+              <button>place order</button>
+          </div>
+    </main>
+    <script type ='module' src="./cart.js"></script>
+</body>
+</html>
