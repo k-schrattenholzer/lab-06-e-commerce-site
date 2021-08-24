@@ -20,3 +20,4 @@ test('renderProduct should take in a seed and return the correct HTML elements',
 
     expect.deepEqual(actual, expected);
 });
+
