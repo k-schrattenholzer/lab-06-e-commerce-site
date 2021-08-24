@@ -7,6 +7,7 @@ export function renderProduct(seed) {
     const heightP = document.createElement('p');
     const lightP = document.createElement('p');
     const priceP = document.createElement('p');
+    const cartButton = document.createElement('button');
 
     li.classList.add('seed');
     h3.classList.add('seed-name');
@@ -16,13 +17,15 @@ export function renderProduct(seed) {
     heightP.classList.add('plant-height');
     lightP.classList.add('seed-light');
     priceP.classList.add('seed-price');
+    cartButton.classList.add('cart-button');
 
     h3.textContent = seed.name;
     img.src = seed.image;
     typeP.textContent = `Seed type: ${seed.type}`;
     heightP.textContent = `Grows to: ${seed.height}`;
     lightP.textContent = `Needs: ${seed.light}`;
-    priceP.textContent = `Price: ${seed.price}`;
+    priceP.textContent = `$${seed.price}`;
+    cartButton.textContent = 'Add to Cart'
 
     flexDiv.append(
         typeP,
@@ -34,8 +37,12 @@ export function renderProduct(seed) {
     li.append(
         h3,
         img,
-        flexDiv
+        flexDiv,
+        cartButton
     );
-
+    cartButton.addEventListener('click', () => {
+        alert(`Added ${seed.name} to the cart`);
+    });
     return li;
+
 }
