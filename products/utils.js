@@ -25,7 +25,7 @@ export function renderProduct(seed) {
     heightP.textContent = `Grows to: ${seed.height}`;
     lightP.textContent = `Needs: ${seed.light}`;
     priceP.textContent = `$${seed.price}`;
-    cartButton.textContent = 'Add to Cart'
+    cartButton.textContent = 'Add to Cart';
 
     flexDiv.append(
         typeP,
