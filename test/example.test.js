@@ -1,18 +1,23 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
+import { renderProduct } from '../products/utils.js';
 
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = true;
+test('renderProduct should take in a seed and return the correct HTML elements', (expect) => {
+    const expected = `<li class="seed"><h3 class="seed-name"></h3><img class="seed-img" src="" alt="seed pack"><div class="flex"><p class="seed-type"></p><p class="plant-height"></p><p class="seed-light"></p><p class="seed-price"></p></div></li>`;
     
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = true;
+    const actual = renderProduct(
+        { 
+            id: 7,
+            name:'Cannas',
+            image:'../assets/new cannas.jpeg',
+            type:'Flower',
+            height:'3-10 ft',
+            light:'full sun',
+            price: 6.49,
+        }
+    );
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
     expect.equal(actual, expected);
 });
