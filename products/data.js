@@ -107,4 +107,4 @@ export const seedPacks = [
         light:'full shade',
         price: 6.99,
     }
-]
+];
