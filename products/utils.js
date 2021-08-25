@@ -1,3 +1,5 @@
+import { addToCart } from '../cart/localstorage-utils.js';
+
 export function renderProduct(seed) {
     const li = document.createElement('li');
     const h3 = document.createElement('h3');
@@ -43,6 +45,7 @@ export function renderProduct(seed) {
     
     cartButton.addEventListener('click', () => {
         alert(`Added ${seed.name} to the cart`);
+        addToCart(seed.id);
     });
 
     return li;
