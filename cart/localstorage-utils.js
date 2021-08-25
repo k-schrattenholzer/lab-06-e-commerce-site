@@ -36,6 +36,16 @@ export function addToCart(addedItemId) {
     sendCart(cart);
 }
 
-export function clearCart() {
+export function orderAlert() {
+    const cart = getCart();
+    const stringedCart = JSON.stringify(cart, true, 2);
+    alert(`Thank you for your patronage! You ordered ${stringedCart}`);
+}
 
+export function clearCart() {
+    localStorage.removeItem('CART');
+}
+
+export function returnUserHome() {
+    window.location.href = '../index.html';
 }

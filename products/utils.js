@@ -44,7 +44,7 @@ export function renderProduct(seed) {
     );
     
     cartButton.addEventListener('click', () => {
-        alert(`Added ${seed.name} to the cart`);
+        alert(`Added\n${seed.name}\nto the cart`);
         addToCart(seed.id);
     });
 
