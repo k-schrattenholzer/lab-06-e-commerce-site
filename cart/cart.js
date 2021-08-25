@@ -1,6 +1,8 @@
 import { getOrderTotal, renderTableRow } from './render-table.js';
-import { cart } from './cart-data.js';
+import { getCart } from './localstorage-utils.js';
 import { seedPacks } from "../products/data.js";
+
+const cart = getCart();
 
 const tableBody = document.querySelector('tbody');
 const total = getOrderTotal(seedPacks, cart);

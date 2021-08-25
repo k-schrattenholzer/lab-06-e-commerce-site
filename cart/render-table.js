@@ -15,8 +15,6 @@ export function renderTableRow(cartItem) {
     priceTd.textContent = product.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
     quantityTd.textContent = cartItem.quantity;
 
-    console.log(product.price);
-
     const total = getItemTotal(product.price, cartItem.quantity);
     subTotalTd.textContent = total.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 
