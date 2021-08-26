@@ -49,3 +49,7 @@ export function clearCart() {
 export function returnUserHome() {
     window.location.href = '../index.html';
 }
+
+export function returnToProducts() {
+    window.location.href = '../products/index.html';
+}
