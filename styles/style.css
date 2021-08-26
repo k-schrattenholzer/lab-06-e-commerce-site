@@ -39,8 +39,20 @@ main {
     align-items: center;
     margin-bottom: calc(var(--footer-height));
     background-color: var(--color2);
+    background-image: url('../assets/hom-page.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
     height: 100%;
     padding: 5px;
+}
+
+.welcome {
+    background-color: rgba(0,0,0,0.45);
+    color: seashell;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 section {
