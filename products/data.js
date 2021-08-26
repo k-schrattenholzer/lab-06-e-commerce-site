@@ -2,7 +2,7 @@ export const seedPacks = [
     {
         id: 1,
         name:`Granny's Bonnet`,
-        image:'../assets/Aquilegia.jpeg',
+        image:'../assets/products/Aquilegia.jpeg',
         type:'Flower',
         height:'15-20 in',
         light:'partial shade',
@@ -11,7 +11,7 @@ export const seedPacks = [
     {
         id: 2,
         name:'Carnations',
-        image:'../assets/carnations.jpeg',
+        image:'../assets/products/carnations.jpeg',
         type:'Flower',
         height:'25-30 in',
         light:'full sun',
@@ -20,7 +20,7 @@ export const seedPacks = [
     {
         id: 3,
         name:'Misc Large Dahlias',
-        image:'../assets/large dahlias.jpeg',
+        image:'../assets/products/large dahlias.jpeg',
         type:'Mix',
         height:'3-4 ft',
         light:'full sun',
@@ -29,7 +29,7 @@ export const seedPacks = [
     {
         id: 4,
         name:'Lima Beans',
-        image:'../assets/limabeans.jpeg',
+        image:'../assets/products/limabeans.jpeg',
         type:'Vegetable',
         height:'1-3 ft',
         light:'full sun',
@@ -38,7 +38,7 @@ export const seedPacks = [
     {
         id: 5,
         name:'Farm and Flower Mix',
-        image:'../assets/misc farm and flower.png',
+        image:'../assets/products/misc farm and flower.png',
         type:'Mix',
         height:'n/a',
         light:'partial shade to full sun',
@@ -47,7 +47,7 @@ export const seedPacks = [
     {
         id: 6,
         name:'Tulips',
-        image:'../assets/misc tulips.jpeg',
+        image:'../assets/products/misc tulips.jpeg',
         type:'Flower',
         height:'12-16 in.',
         light:'partial sun',
@@ -56,7 +56,7 @@ export const seedPacks = [
     {
         id: 7,
         name:'Cannas',
-        image:'../assets/new cannas.jpeg',
+        image:'../assets/products/new cannas.jpeg',
         type:'Flower',
         height:'3-10 ft',
         light:'full sun',
@@ -65,7 +65,7 @@ export const seedPacks = [
     {
         id: 8,
         name:'Pansy',
-        image:'../assets/pansy.jpeg',
+        image:'../assets/products/pansy.jpeg',
         type:'Flower',
         height:'6-12 in.',
         light:'partial sun',
@@ -74,7 +74,7 @@ export const seedPacks = [
     {
         id: 9,
         name:'Petunias',
-        image:'../assets/petunias.jpeg',
+        image:'../assets/products/petunias.jpeg',
         type:'Flower',
         height:'6-18 in.',
         light:'full sun',
@@ -83,7 +83,7 @@ export const seedPacks = [
     {
         id: 10,
         name:'Pink Dahlias',
-        image:'../assets/pink dahlias.jpeg',
+        image:'../assets/products/pink dahlias.jpeg',
         type:'Flower',
         height:'3-4 in.',
         light:'full shade',
@@ -92,7 +92,7 @@ export const seedPacks = [
     {
         id: 11,
         name:'Sweet Peas',
-        image:'../assets/SweetPeas.jpeg',
+        image:'../assets/products/SweetPeas.jpeg',
         type:'Flower',
         height:'6-8 ft.',
         light:'full sun',
@@ -101,7 +101,7 @@ export const seedPacks = [
     {
         id: 12,
         name:'Tomato',
-        image:'../assets/tomato.png',
+        image:'../assets/products/tomato.png',
         type:'Vegetable',
         height:'3-4 in.',
         light:'full shade',

@@ -27,7 +27,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Besley', serif;
-    background-image: url('../assets/hom-page.jpg');
+    background-image: url('../assets/home/hom-page.jpg');
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;

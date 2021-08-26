@@ -1,5 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
+import { addToCart } from '../cart/localstorage-utils.js';
 import { renderProduct } from '../products/utils.js';
 
 const test = QUnit.test;
@@ -19,5 +20,37 @@ test('renderProduct should take in a seed and return the correct HTML elements',
         });
 
     expect.equal(actual.outerHTML, expected);
+});
+
+test('addToCart should take an id and increment quantity of that item ', (expect) => {
+    const cartBefore = [{
+        id: 4,
+        quantity: 6,
+    },
+    {
+        id: 7,
+        quantity: 3,
+    }
+    ];
+
+    const cartAfter = [{
+        id: 4,
+        quantity: 6,
+    },
+    {
+        id: 7,
+        quantity: 4,
+    }
+    ];
+
+    const stringyCart = JSON.stringify(cartBefore);
+    localStorage.setItem('CART', stringyCart);
+
+    addToCart(7, 1);
+
+    stringyCartAfter = localStorage.getItem('CART');
+    const actual = JSON.parse(stringyCartAfter);
+
+    expect.deepEqual(actual, cartAfter);
 });
 
