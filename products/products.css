@@ -63,7 +63,7 @@ header {
     height: 3rem;
     margin: 10px;
     margin-top: 0px;
-    position:fixed;
+    position: fixed;
     box-shadow: var(--shadow);
 }
 
